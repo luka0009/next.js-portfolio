@@ -31,8 +31,8 @@ const Skills = () => {
             "repeating-radial-gradient(pink 2px, #1F0A3A 5px, #1F0A3A 100px)",
         }}
       >
-        <motion.div className="flex justify-center items-center rounded-full font-semibold bg-black text-white p-2 px-4">
-          Web
+        <motion.div className="flex justify-center items-center rounded-full font-semibold bg-black text-white p-3">
+          Software Development
         </motion.div>
         <Skill name="HTML" image="/assets/skills/html.png" x="-5vw" y="-13vw" />
         <Skill name="CSS" image="/assets/skills/css.png" x="-20vw" y="2vw" />
