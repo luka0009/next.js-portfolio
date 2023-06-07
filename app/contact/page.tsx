@@ -4,12 +4,6 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Transition from "../components/Transition";
-import { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Contact',
-  description: 'Contact me via E-Mail',
-};
 
 export default function Contact() {
   const content = "lukabarbakadze18@gmail.com";
