@@ -1,18 +1,18 @@
-import Navbar from './components/Navbar'
-import './globals.css'
-import { Inter } from 'next/font/google'
+import Navbar from "./components/Navbar";
+import "./globals.css";
+import { DM_Sans } from "next/font/google";
 
-const inter = Inter({ subsets: ['latin'] })
-
+const inter = DM_Sans({ subsets: ["latin"], weight: '400' });
 export const metadata = {
-  title: 'Portfolio Website',
-  description: 'Portfolio website: Luka Barbakadze - Web developer, Front-End developer, Full-Stack Develoepr',
-}
+  title: "Portfolio Website",
+  description:
+    "Portfolio website: Luka Barbakadze - Web developer, Front-End developer, Full-Stack Develoepr",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
@@ -21,5 +21,5 @@ export default function RootLayout({
         {children}
       </body>
     </html>
-  )
+  );
 }

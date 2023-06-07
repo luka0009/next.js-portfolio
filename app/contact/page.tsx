@@ -4,6 +4,8 @@ import React, { useState } from "react";
 import gmail from "../../public/assets/gmail.png";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Transition from "../components/Transition";
+import TransitionEffect from "../components/TransitionEffect";
 
 export default function Contact() {
   const content = "lukabarbakadze18@gmail.com";
@@ -55,6 +57,8 @@ export default function Contact() {
   };
 
   return (
+    <>
+    <Transition />
     <div className=" text-white py-3
      bg-[#1F0A3A] 
      bg-gradient-to-r from-[#1F0A3A] via-black to-[#1F0A3A]
@@ -116,5 +120,6 @@ export default function Contact() {
         </div>
       </motion.div>
     </div>
+    </>
   );
 }

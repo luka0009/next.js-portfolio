@@ -15,7 +15,7 @@ import express from '../../public/assets/skills/express.png';
 import mongodb from '../../public/assets/skills/mongodb.png';
 import MySQL from '../../public/assets/skills/MySQL.png';
 import firebase from '../../public/assets/skills/firebase.png';
-import nextjs from '../../public/assets/skills/nextjs.png';
+// import nextjs from '../../public/assets/skills/nextjs.png';
 import prisma from '../../public/assets/skills/prisma.png';
 
 
@@ -57,13 +57,18 @@ export const skills = [
     },
     {
         id: 107,
-        image: nextjs,
+        image: 'https://files.raycast.com/4dnlt8m2mcb98bzc4zb8pggc4csi',
         name: "Next.js",
     },
     {
         id: 108,
         image: vue,
         name: "Vue.js",
+    },
+    {
+        id: 109,
+        image: 'https://user-images.githubusercontent.com/6919381/149651295-0bf814f5-ad07-4d40-9af2-78dd99d8e1e7.png',
+        name: "Pinia",
     },
     {
         id: 8,

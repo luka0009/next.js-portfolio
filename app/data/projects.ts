@@ -7,14 +7,13 @@ import gallery from '../../public/assets/projects/gallery.png';
 import rtk from '../../public/assets/projects/rtk.png';
 import fitness from '../../public/assets/projects/fitness.png';
 import finances from '../../public/assets/projects/finances.png';
-import chat1 from '../../public/assets/projects/chat1.png';
 
 export const isNotDeployed = 'Not Yet Deployed';
 
 export const projects = [
   {
     id: 703,
-    image: chat1,
+    image: chat,
     name: "Chat App",
     description: 'Full stack Chat applications created with: Next.js (version 13), Next-auth, Pusher, Tailwind css, Typescript, Prisma, MongoDb, Cloudinary. It has all the feauteres, authentication, live messaging, updadting profile, deleting conversations and etc.',
     stack: 'Next.js-13, Next-auth, TS, Tailwind, Prisma, MongoDB, Pusher, CLoudinary',  
