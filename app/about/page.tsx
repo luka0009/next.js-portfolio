@@ -5,10 +5,13 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import TransitionEffect from "../components/TransitionEffect";
 import Skills from "../components/Skills";
+//@ts-expect-error use hooks types
+import { useWindowSize } from "@uidotdev/usehooks";
 
 const About = () => {
   const [hover, setHover] = useState(false);
   // bg-gradient-to-r from-[#1F0A3A] via-black to-[#1F0A3A]
+  const windowSize = useWindowSize();
 
   return (
     <>
@@ -61,42 +64,45 @@ const About = () => {
             />
             {/* </motion.div> */}
           </div>
-          {/* <motion.div
-            // style={{ y: 500 }}
-            // animate={{ y: 0 }}
-            // transition={{ duration: 1.2 }}
-            className="flex flex-col items-center justify-center"
-          >
-            <h1 className="mt-6 text-lg md:text-2xl lg:text-4xl mb-5">
-              Skills
-            </h1>
-            <div className="mt-5 grid grid-cols-5 md:grid-cols-7 gap-3 md:gap-5 lg:gap-9">
-              {skills.map((skill) => (
-                <div
-                  key={skill.id}
-                  onMouseEnter={() => setHover(true)}
-                  onMouseLeave={() => setHover(false)}
-                  className="
+          {windowSize.width < 1024 ? (
+            <motion.div
+              style={{ y: 500 }}
+              animate={{ y: 0 }}
+              transition={{ duration: 1.2 }}
+              className="flex flex-col items-center justify-center"
+            >
+              <h1 className="mt-6 text-lg md:text-2xl lg:text-4xl mb-5">
+                Skills
+              </h1>
+              <div className="mt-5 grid grid-cols-5 md:grid-cols-7 gap-3 md:gap-5 lg:gap-9">
+                {skills.map((skill) => (
+                  <div
+                    key={skill.id}
+                    onMouseEnter={() => setHover(true)}
+                    onMouseLeave={() => setHover(false)}
+                    className="
             flex justify-center items-center rounded-full 
             w-10 h-10 md:w-16 md:h-16 bg-[#1A0B2E] 
             transition duration-1000 
             hover:scale-125 cursor-pointer"
-                >
-                  <Image
-                    src={skill.image}
-                    alt={skill.name}
-                    width={80}
-                    height={80}
-                    className="w-6 h-6 md:w-12 md:h-12 relative"
-                  />
-                  <span className="absolute top-[-25px] width-[100px] transition duration-500 text-[10px] md:text-base">
-                    {hover && skill.name}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </motion.div> */}
-          <Skills />
+                  >
+                    <Image
+                      src={skill.image}
+                      alt={skill.name}
+                      width={20}
+                      height={20}
+                      className="w-6 h-6 md:w-12 md:h-12 relative"
+                    />
+                    <span className="absolute top-[-25px] width-[100px] transition duration-500 text-[10px] md:text-base">
+                      {hover && skill.name}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+          ) : (
+            <Skills />
+          )}
         </div>
       </div>
     </>
