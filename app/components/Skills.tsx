@@ -36,7 +36,12 @@ const Skills = () => {
         </motion.div>
         <Skill name="HTML" image="/assets/skills/html.png" x="-5vw" y="-13vw" />
         <Skill name="CSS" image="/assets/skills/css.png" x="-20vw" y="2vw" />
-        <Skill name="Tailwind" image="/assets/skills/tailwind.png" x="-32vw" y="2vw" />
+        <Skill
+          name="Tailwind"
+          image="/assets/skills/tailwind.png"
+          x="-32vw"
+          y="2vw"
+        />
         <Skill name="JS" image="/assets/skills/js.png" x="5vw" y="10vw" />
         <Skill name="TS" image="/assets/skills/ts.png" x="18vw" y="-8vw" />
         <Skill
@@ -64,12 +69,7 @@ const Skills = () => {
           x="-26vw"
           y="12vw"
         />
-        <Skill
-          name="Vue"
-          image="/assets/skills/vue.png"
-          x="0vw"
-          y="17vw"
-        />
+        <Skill name="Vue" image="/assets/skills/vue.png" x="0vw" y="17vw" />
         <Skill
           name="Git"
           image="/assets/skills/git-github.png"
@@ -94,12 +94,7 @@ const Skills = () => {
           x="-13vw"
           y="9vw"
         />
-        <Skill
-          name="npm"
-          image="/assets/skills/npm.png"
-          x="35vw"
-          y="0vw"
-        />
+        <Skill name="npm" image="/assets/skills/npm.png" x="35vw" y="0vw" />
         <Skill
           name="Next.js"
           image="/assets/skills/nextjs.png"
@@ -112,18 +107,8 @@ const Skills = () => {
           x="16vw"
           y="7vw"
         />
-        <Skill
-          name="Redux"
-          image="/assets/skills/redux.png"
-          x="30vw"
-          y="7vw"
-        />
-        <Skill
-          name="SCSS"
-          image="/assets/skills/scss.png"
-          x="30vw"
-          y="-7vw"
-        />
+        <Skill name="Redux" image="/assets/skills/redux.png" x="30vw" y="7vw" />
+        <Skill name="SCSS" image="/assets/skills/scss.png" x="30vw" y="-7vw" />
         <Skill
           name="Pinia"
           image="https://user-images.githubusercontent.com/6919381/149651295-0bf814f5-ad07-4d40-9af2-78dd99d8e1e7.png"

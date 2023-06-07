@@ -1,7 +1,12 @@
-import Transition from "./components/Transition";
-import TransitionEffect from "./components/TransitionEffect";
+import { Metadata } from "next";
 import "./globals.css";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Portfolio Website",
+  description:
+    "This is a Portfolio website of Luka Barbakadze - Web developer, Front-End developer, Full-Stack Develoepr",
+};
 
 export default function Home() {
   return (

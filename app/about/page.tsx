@@ -5,6 +5,12 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import TransitionEffect from "../components/TransitionEffect";
 import Skills from "../components/Skills";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Skills",
+  description: "My skills as a Developer",
+};
 
 const About = () => {
   const [hover, setHover] = useState(false);

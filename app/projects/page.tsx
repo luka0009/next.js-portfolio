@@ -1,5 +1,11 @@
 import { projects } from '../data/projects';
 import Project from '../components/Project';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Projects',
+  description: 'Projects I have worked on',
+};
 
 export default function Projects() {
   return (
